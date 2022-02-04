@@ -2,7 +2,7 @@
 Welcome to VanillaLauncher !
 
 
-The aim of this application is to login automatically on Vanilla and Burning Crusade private servers.
+The aim of this application is to login automatically on Vanilla and Burning Crusade private servers, and is also compatible with Turtle WoW.
 It is helpful if you play on several realms, if you have many accounts, and overall if you are a multiboxer. 
 
 
@@ -33,7 +33,7 @@ Across all the config you will use the 3 same buttons : ADD, SAVE, DELETE. It's 
 
 In order to customize the application properly, you should keep the following logical order in mind :
 
-	VERSION (Vanilla/BC) --> SERVER --> REALM --> ACCOUNT --> CHARACTER
+	VERSION (Vanilla/BC/Turtle) --> SERVER --> REALM --> ACCOUNT --> CHARACTER
 
 
 
@@ -42,8 +42,8 @@ SERVERS & REALMS
 
 The application comes with several popular private servers embedded. A private server serves most often several Realms. 
 If the Realm you play on is not listed, you should add it using the SERVERS and REALMS tabs (in that order).
-For SERVERS, the most important is to properly define the authentication server address (what you normally put in your "realmlist.wtf" file).
-For REALMS, their names should match exactly those presented to you in game the first time you login into a server.
+ * For SERVERS, the most important is to properly define the authentication server address (what you normally put in your "realmlist.wtf" file).
+ * For REALMS, their names should match exactly those presented to you in game the first time you login into a server.
 
 
 ACCOUNTS
@@ -69,8 +69,8 @@ From the LINKS tab , you have the possibility to create a custom Links menu to q
 For links related to your GUILD, check the appropriate checkbox and the those links will appear under the guild menu.
 
 
-MACROS
-------
+MACROS (Advanced)
+-----------------
 
 The macros basically allow you to chain-login with one click, on several accounts and/or characters, and to resize and reposition each WoW window as you want.
 Multiboxers will appreciate it.
@@ -80,7 +80,7 @@ FAVORITES
 ---------
 
 On ACCOUNTS, CHARACTERS and MACROS, you have the possibility to tick the "Favorite" checkbox.
-All favorite items are duplicated on top root of the Tray menu.
+All favorite items are duplicated on top root of the Tray menu, and you can quickly display them in the TreeView.
 
 
 
