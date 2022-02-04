@@ -42,8 +42,8 @@ SERVERS & REALMS
 
 The application comes with several popular private servers embedded. A private server serves most often several Realms. 
 If the Realm you play on is not listed, you should add it using the SERVERS and REALMS tabs (in that order).
- --> For SERVERS, the most important is to properly define the authentication server address (what you normally put in your "realmlist.wtf" file).
- --> For REALMS, their names should match exactly those presented to you in game the first time you login into a server.
+For SERVERS, the most important is to properly define the authentication server address (what you normally put in your "realmlist.wtf" file).
+For REALMS, their names should match exactly those presented to you in game the first time you login into a server.
 
 
 ACCOUNTS
