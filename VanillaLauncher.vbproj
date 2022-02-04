@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{BEDD3AC3-8784-47E9-837D-F1D8A186D804}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VanillaLauncher.InitForm</StartupObject>
+    <RootNamespace>VanillaLauncher</RootNamespace>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Fire Elemental.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.EF6.1.0.115.5\lib\net40\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Linq.1.0.115.5\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassWS.vb" />
+    <Compile Include="CryptoDES.vb" />
+    <Compile Include="InitForm.Designer.vb">
+      <DependentUpon>InitForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InitForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordForm.Designer.vb">
+      <DependentUpon>PasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicDB.vb" />
+    <Compile Include="PublicStuff.vb" />
+    <Compile Include="TrayForm.Designer.vb">
+      <DependentUpon>TrayForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowMgt.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InitForm.resx">
+      <DependentUpon>InitForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordForm.resx">
+      <DependentUpon>PasswordForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm.resx">
+      <DependentUpon>TrayForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Resources\1j7ca2kn.bmp" />
+    <Content Include="Resources\26px-ClassIcon_deathknight.png" />
+    <Content Include="Resources\26px-ClassIcon_demon_hunter.png" />
+    <Content Include="Resources\26px-ClassIcon_druid.png" />
+    <Content Include="Resources\26px-ClassIcon_hunter.png" />
+    <Content Include="Resources\26px-ClassIcon_mage.png" />
+    <Content Include="Resources\26px-ClassIcon_monk.png" />
+    <Content Include="Resources\26px-ClassIcon_paladin.png" />
+    <Content Include="Resources\26px-ClassIcon_priest.png" />
+    <Content Include="Resources\26px-ClassIcon_rogue.png" />
+    <Content Include="Resources\26px-ClassIcon_shaman.png" />
+    <Content Include="Resources\26px-ClassIcon_warlock.png" />
+    <Content Include="Resources\26px-ClassIcon_warrior.png" />
+    <Content Include="Resources\450ti4n6.bmp" />
+    <Content Include="Resources\8rrhresh.bmp" />
+    <Content Include="Resources\A Sealed Note.ico" />
+    <Content Include="Resources\ability_ambush.jpg" />
+    <Content Include="Resources\account.jpg" />
+    <Content Include="Resources\achievement_character_bloodelf_female.jpg" />
+    <Content Include="Resources\achievement_character_bloodelf_male.jpg" />
+    <Content Include="Resources\achievement_character_draenei_female.jpg" />
+    <Content Include="Resources\achievement_character_draenei_male.jpg" />
+    <Content Include="Resources\achievement_character_dwarf_female.jpg" />
+    <Content Include="Resources\achievement_character_dwarf_male.jpg" />
+    <Content Include="Resources\achievement_character_gnome_female.jpg" />
+    <Content Include="Resources\achievement_character_gnome_male.jpg" />
+    <Content Include="Resources\achievement_character_human_female.jpg" />
+    <Content Include="Resources\achievement_character_human_male.jpg" />
+    <Content Include="Resources\achievement_character_nightelf_female.jpg" />
+    <Content Include="Resources\achievement_character_nightelf_male.jpg" />
+    <Content Include="Resources\achievement_character_orc_female.jpg" />
+    <Content Include="Resources\achievement_character_orc_male.jpg" />
+    <Content Include="Resources\achievement_character_tauren_female.jpg" />
+    <Content Include="Resources\achievement_character_tauren_male.jpg" />
+    <Content Include="Resources\achievement_character_troll_female.jpg" />
+    <Content Include="Resources\achievement_character_troll_male.jpg" />
+    <Content Include="Resources\achievement_character_undead_female.jpg" />
+    <Content Include="Resources\achievement_character_undead_male.jpg" />
+    <Content Include="Resources\Actions-document-decrypt-icon.png" />
+    <Content Include="Resources\Actions-document-encrypt-icon.png" />
+    <Content Include="Resources\Actions-document-save-icon.png" />
+    <Content Include="Resources\Actions-edit-delete-icon.png" />
+    <Content Include="Resources\Actions-help-hint-icon.png" />
+    <Content Include="Resources\Actions-im-user-icon.png" />
+    <Content Include="Resources\Add-icon.png" />
+    <Content Include="Resources\agenda.png" />
+    <Content Include="Resources\Alliance Banner.ico" />
+    <Content Include="Resources\Alliance Banner.png" />
+    <Content Include="Resources\Alliance_32.png" />
+    <Content Include="Resources\Alliance_Big.png" />
+    <Content Include="Resources\App_Exit.png" />
+    <Content Include="Resources\App_minimize.png" />
+    <Content Include="Resources\backstab.jpg" />
+    <Content Include="Resources\Categories-applications-system-icon.png" />
+    <Content Include="Resources\cilkscxq.bmp" />
+    <Content Include="Resources\class_big_deathknight.png" />
+    <Content Include="Resources\class_big_druid.png" />
+    <Content Include="Resources\class_big_hunter.png" />
+    <Content Include="Resources\class_big_mage.png" />
+    <Content Include="Resources\class_big_mule.png" />
+    <Content Include="Resources\class_big_paladin.png" />
+    <Content Include="Resources\class_big_priest.png" />
+    <Content Include="Resources\class_big_rogue.png" />
+    <Content Include="Resources\class_big_shaman.png" />
+    <Content Include="Resources\class_big_warlock.png" />
+    <Content Include="Resources\class_big_warrior.png" />
+    <Content Include="Resources\class_deathknight.jpg" />
+    <Content Include="Resources\class_demonhunter.jpg" />
+    <Content Include="Resources\class_druid.jpg" />
+    <Content Include="Resources\class_hunter.jpg" />
+    <Content Include="Resources\class_mage.jpg" />
+    <Content Include="Resources\class_monk.jpg" />
+    <Content Include="Resources\class_paladin.jpg" />
+    <Content Include="Resources\class_priest.jpg" />
+    <Content Include="Resources\class_rogue.jpg" />
+    <Content Include="Resources\class_shaman.jpg" />
+    <Content Include="Resources\class_warlock.jpg" />
+    <Content Include="Resources\class_warrior.jpg" />
+    <Content Include="Resources\Close-icon.png" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\coffre_ferme.png" />
+    <Content Include="Resources\Defias Script.ico" />
+    <Content Include="Resources\Document.ico" />
+    <Content Include="Resources\e58d84u9.bmp" />
+    <Content Include="Resources\engie.png" />
+    <Content Include="Resources\FA.png" />
+    <Content Include="Resources\FH.png" />
+    <Content Include="Resources\Fire Elemental.ico" />
+    <Content Include="Resources\folder.png" />
+    <Content Include="Resources\folder_big.png" />
+    <Content Include="Resources\folder_bigg.png" />
+    <Content Include="Resources\fullscreen.png" />
+    <None Include="Resources\goblin-female.png" />
+    <None Include="Resources\goblin-male.png" />
+    <Content Include="Resources\guild.png" />
+    <Content Include="Resources\gun.png" />
+    <Content Include="Resources\gun_big.png" />
+    <Content Include="Resources\ham.png" />
+    <None Include="Resources\highelf-female.png" />
+    <None Include="Resources\highelf-male.png" />
+    <Content Include="Resources\Horde Banner.ico" />
+    <Content Include="Resources\Horde Banner.png" />
+    <Content Include="Resources\Horde_32.png" />
+    <Content Include="Resources\Horde_Big.png" />
+    <Content Include="Resources\IconSmall_BloodElf2_Female.gif" />
+    <Content Include="Resources\IconSmall_BloodElf2_Male.gif" />
+    <Content Include="Resources\IconSmall_Draenei_Female.gif" />
+    <Content Include="Resources\IconSmall_Draenei_Male.gif" />
+    <Content Include="Resources\IconSmall_Dwarf_Female.gif" />
+    <Content Include="Resources\IconSmall_Dwarf_Male.gif" />
+    <Content Include="Resources\IconSmall_Gnome_Female.gif" />
+    <Content Include="Resources\IconSmall_Gnome_Male.gif" />
+    <Content Include="Resources\IconSmall_Goblin2_Female.gif" />
+    <Content Include="Resources\IconSmall_Goblin2_Male.gif" />
+    <Content Include="Resources\IconSmall_Human_Female.gif" />
+    <Content Include="Resources\IconSmall_Human_Male.gif" />
+    <Content Include="Resources\IconSmall_NightElf_Female.gif" />
+    <Content Include="Resources\IconSmall_NightElf_Male.gif" />
+    <Content Include="Resources\IconSmall_Orc_Female.gif" />
+    <Content Include="Resources\IconSmall_Orc_Male.gif" />
+    <Content Include="Resources\IconSmall_Pandaren_Female.gif" />
+    <Content Include="Resources\IconSmall_Pandaren_Male.gif" />
+    <Content Include="Resources\IconSmall_Tauren_Female.gif" />
+    <Content Include="Resources\IconSmall_Tauren_Male.gif" />
+    <Content Include="Resources\IconSmall_Tauren_Male1.gif" />
+    <Content Include="Resources\IconSmall_Troll_Female.gif" />
+    <Content Include="Resources\IconSmall_Troll_Male.gif" />
+    <Content Include="Resources\IconSmall_Undead_Female.gif" />
+    <Content Include="Resources\IconSmall_Undead_Male.gif" />
+    <Content Include="Resources\IconSmall_Worgen2_Female.gif" />
+    <Content Include="Resources\IconSmall_Worgen2_Male.gif" />
+    <Content Include="Resources\Info-icon.png" />
+    <Content Include="Resources\Key.png" />
+    <Content Include="Resources\l3q5tqf2.bmp" />
+    <Content Include="Resources\macro.jpg" />
+    <Content Include="Resources\nostalgeek.png" />
+    <Content Include="Resources\novacoin.png" />
+    <Content Include="Resources\paypal %282%29.png" />
+    <Content Include="Resources\paypal-donate-button.png" />
+    <Content Include="Resources\paypal.gif" />
+    <Content Include="Resources\paypal.png" />
+    <Content Include="Resources\paypal1.png" />
+    <Content Include="Resources\Places-network-workgroup-icon.png" />
+    <Content Include="Resources\Plain Letter.ico" />
+    <Content Include="Resources\play.png" />
+    <Content Include="Resources\Programming-Maximize-Window-icon.png" />
+    <Content Include="Resources\qrx81gwh.bmp" />
+    <Content Include="Resources\question-mark.png" />
+    <Content Include="Resources\qvee9cp8.bmp" />
+    <Content Include="Resources\r0ffxnk1.bmp" />
+    <Content Include="Resources\Sealed Recruitment Letter.ico" />
+    <Content Include="Resources\search.png" />
+    <Content Include="Resources\Solid Iron Chest.ico" />
+    <Content Include="Resources\Square-128.png" />
+    <Content Include="Resources\Square-Arrow-Bottom-Left-128.png" />
+    <Content Include="Resources\Square-Arrow-Bottom-Right-128.png" />
+    <Content Include="Resources\Square-Arrow-Corners-1-128.png" />
+    <Content Include="Resources\Square-Arrow-Left-Right-128.png" />
+    <Content Include="Resources\Square-Arrow-Top-Left-128.png" />
+    <Content Include="Resources\Square-Arrow-Top-Right-128.png" />
+    <Content Include="Resources\Square-Arrow-Up-Down-128.png" />
+    <Content Include="Resources\Square-Center-Small-128.png" />
+    <Content Include="Resources\Square-Grid-128.png" />
+    <Content Include="Resources\Square-Triangle-Right-128.png" />
+    <Content Include="Resources\stats.png" />
+    <Content Include="Resources\TextFileHelp.txt" />
+    <Content Include="Resources\TrayIcon.bmp" />
+    <Content Include="Resources\treasure.png" />
+    <Content Include="Resources\tux.png" />
+    <Content Include="Resources\url.png" />
+    <Content Include="Resources\us2t9w5v.bmp" />
+    <Content Include="Resources\User-Interface-Restore-Window-icon.png" />
+    <Content Include="Resources\V1.gif" />
+    <Content Include="Resources\V1_large.png" />
+    <Content Include="Resources\V2.gif" />
+    <Content Include="Resources\V2_large.png" />
+    <None Include="Resources\V3_large.png" />
+    <None Include="Resources\V3.gif" />
+    <Content Include="Resources\website-128.png" />
+    <Content Include="Resources\windowed.png" />
+    <Content Include="Resources\World of Warcraft App.ico" />
+    <Content Include="Resources\wow-icon.png" />
+    <Content Include="Resources\wow.ico" />
+    <Content Include="Resources\wowhead.png" />
+    <Content Include="Resources\wow_nightelf_female.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net40\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net40\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net40\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net40\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
